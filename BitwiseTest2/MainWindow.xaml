@@ -1,0 +1,68 @@
+﻿<Window x:Class="BitwiseTest2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="500" Width="525">
+    <Grid>
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <TextBlock HorizontalAlignment="Center" FontSize="50">bitWise</TextBlock>
+                <TextBlock HorizontalAlignment="Center" FontSize="14">MEMORY 1</TextBlock>
+                <TextBox HorizontalAlignment="Center" Width="200" TextAlignment="Center" FontSize="20" Name="mem1TBX"></TextBox>
+                <TextBlock HorizontalAlignment="Center" FontSize="14"></TextBlock>
+
+                <TextBlock HorizontalAlignment="Center" FontSize="14">MEMORY 2</TextBlock>
+                <TextBox HorizontalAlignment="Center" Width="200" TextAlignment="Center" FontSize="20" Name="mem2TBX"></TextBox>
+                <TextBlock HorizontalAlignment="Center" FontSize="14"></TextBlock>
+
+                <TextBlock HorizontalAlignment="Center" FontSize="14">MEMORY 3</TextBlock>
+                <TextBox HorizontalAlignment="Center" Width="200" TextAlignment="Center" FontSize="20" Name="mem3TBX"></TextBox>
+                <TextBlock HorizontalAlignment="Center" FontSize="14"></TextBlock>
+
+                <TextBlock HorizontalAlignment="Center" FontSize="14">CALCULATION CELL A</TextBlock>
+                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                    <Button Width="60" Name="recall1ABN" Click="recallBN_Click">RECALL 1</Button>
+                    <Button Width="60" Margin="10,0,10,0" Name="recall2ABN" Click="recallBN_Click">RECALL 2</Button>
+                    <Button Width="60" Name="recall3ABN" Click="recallBN_Click">RECALL 3</Button>
+                </StackPanel>
+                <TextBox HorizontalAlignment="Center" Width="200" TextAlignment="Center" FontSize="20" Name="calcATBX"></TextBox>
+                <TextBlock HorizontalAlignment="Center" FontSize="14"></TextBlock>
+
+                <TextBlock HorizontalAlignment="Center" FontSize="14">CALCULATION CELL B</TextBlock>
+                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                    <Button Width="60" Name="recall1BBN" Click="recallBN_Click">RECALL 1</Button>
+                    <Button Width="60" Margin="10,0,10,0" Name="recall2BBN" Click="recallBN_Click">RECALL 2</Button>
+                    <Button Width="60" Name="recall3BBN" Click="recallBN_Click">RECALL 3</Button>
+                </StackPanel>
+                <TextBox HorizontalAlignment="Center" Width="200" TextAlignment="Center" FontSize="20"  Name="calcBTBX"></TextBox>
+                <TextBlock HorizontalAlignment="Center" FontSize="14"></TextBlock>
+
+                <TextBlock HorizontalAlignment="Center" FontSize="14">RESULT</TextBlock>
+                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                    <Button Width="60" Name="andBN" Click="andBN_Click">AND</Button>
+                    <Button Width="60" Margin="10,0,10,0" Name="orBN" Click="orBN_Click">OR</Button>
+                    <Button Width="60" Name="xorBN" Click="xorBN_Click">XOR</Button>
+                </StackPanel>
+                <TextBox HorizontalAlignment="Center" Width="200" TextAlignment="Center" FontSize="20" Name="resultTBX"></TextBox>
+                <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                    <Button Width="60" Name="store1BN" Click="storeBN_Click">STORE 1</Button>
+                    <Button Width="60" Name="store2BN" Margin="10,0,10,0" Click="storeBN_Click">STORE 2</Button>
+                    <Button Width="60" Name="store3BN" Click="storeBN_Click">STORE 3</Button>
+                </StackPanel>
+                <TextBlock HorizontalAlignment="Center" FontSize="14"></TextBlock>
+
+                <TextBlock HorizontalAlignment="Center" FontSize="14">TARGET</TextBlock>
+                <TextBox HorizontalAlignment="Center" Width="200" TextAlignment="Center" FontSize="20" Name="targetTBX"></TextBox>
+                <TextBlock HorizontalAlignment="Center" FontSize="14"></TextBlock>
+
+                <Button Width="200" Name="resetBN" Click="resetBN_Click">RESET</Button>
+                <TextBlock HorizontalAlignment="Center" FontSize="14"></TextBlock>
+
+                <TextBlock HorizontalAlignment="Center" FontSize="14">MISSION BUILDER</TextBlock>
+                <TextBox HorizontalAlignment="Center" Width="200" TextAlignment="Center" FontSize="20" Name="lengthTBX"></TextBox>
+                <Button Width="200" Name="buildMissionBN" Click="buildMissionBN_Click">BUILD MISSION</Button>
+                <Button Width="200" Name="saveBN" Click="saveBN_Click">SAVE</Button>
+                <TextBox HorizontalAlignment="Center" Width="200" TextAlignment="Center" FontSize="20" Name="codeTBX"></TextBox>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

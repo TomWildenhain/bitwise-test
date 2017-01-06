@@ -1,0 +1,24 @@
+101010
+110011
+101101
+
+
+111000
+
+1) R1
+2) R2
+3) Make target
+4) find h identicals, if t different, make them different
+5) find 00, if t is 1, make them 1.
+
+
+00
+00
+10
+
+01
+
+000100
+100110
+010000
+001001
